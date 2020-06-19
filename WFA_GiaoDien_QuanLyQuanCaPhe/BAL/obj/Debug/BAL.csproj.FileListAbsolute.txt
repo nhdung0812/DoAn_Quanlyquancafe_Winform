@@ -1,0 +1,11 @@
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\bin\Debug\BAL.dll
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\bin\Debug\BAL.pdb
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\bin\Debug\DAL.dll
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\bin\Debug\DAL.pdb
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\obj\Debug\BAL.csprojAssemblyReference.cache
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\obj\Debug\BAL.csproj.CoreCompileInputs.cache
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\obj\Debug\BAL.csproj.CopyComplete
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\obj\Debug\BAL.dll
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\obj\Debug\BAL.pdb
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\bin\Debug\BEL.dll
+E:\WFA_GiaoDien_QuanLyQuanCaPhe\BAL\bin\Debug\BEL.pdb
