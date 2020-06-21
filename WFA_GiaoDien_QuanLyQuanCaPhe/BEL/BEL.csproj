@@ -42,7 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BEL_BAN.cs" />
+    <Compile Include="BEL_HOADON.cs" />
+    <Compile Include="BEL_LOAINUOC.cs" />
+    <Compile Include="BEL_MENU.cs" />
+    <Compile Include="BEL_NUOC.cs" />
     <Compile Include="BEL_TAIKHOAN.cs" />
+    <Compile Include="BEL_THONGTINHOADON.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

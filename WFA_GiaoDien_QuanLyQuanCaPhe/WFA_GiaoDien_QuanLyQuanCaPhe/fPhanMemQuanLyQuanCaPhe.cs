@@ -1,4 +1,5 @@
 ﻿using BAL;
+using BEL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,11 +15,12 @@ namespace WFA_GiaoDien_QuanLyQuanCaPhe
     public partial class fPhanMemQuanLyQuanCaPhe : Form
     {
         public static int trangthai = 0;
-        public static int dai = 85;
-        public static int Cao = 85;
+        public static int dai = 84;
+        public static int Cao = 84;
         public fPhanMemQuanLyQuanCaPhe()
         {
             InitializeComponent();
+            
         }
 
         private void TSMIDangXuat_Click(object sender, EventArgs e)
@@ -52,18 +54,15 @@ namespace WFA_GiaoDien_QuanLyQuanCaPhe
         private void fPhanMemQuanLyQuanCaPhe_Load(object sender, EventArgs e)
         {
             loadban();
+            
         }
         public void loadban()
         {
             BAL_BAN xuly = new BAL_BAN();
-            xuly.getDSban(dai, Cao, flp_ban);
+            xuly.getDSban(dai, Cao, flp_ban,lsvBill);
         }
-
-
-
-
-
-
+        
+        
 
 
     }

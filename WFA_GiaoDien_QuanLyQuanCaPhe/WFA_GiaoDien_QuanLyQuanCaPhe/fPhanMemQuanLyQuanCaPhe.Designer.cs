@@ -48,9 +48,14 @@
             this.bntThemMon = new System.Windows.Forms.Button();
             this.cboDanhMucMonAn = new System.Windows.Forms.ComboBox();
             this.plBill = new System.Windows.Forms.Panel();
-            this.livBill = new System.Windows.Forms.ListView();
+            this.lsvBill = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flp_ban = new System.Windows.Forms.FlowLayoutPanel();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.plListTable.SuspendLayout();
@@ -65,7 +70,7 @@
             this.AccountProFileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(807, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(833, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -120,7 +125,7 @@
             this.panel3.Controls.Add(this.cboChuyenBan);
             this.panel3.Controls.Add(this.btnChuyenBan);
             this.panel3.Controls.Add(this.bntThanhToan);
-            this.panel3.Location = new System.Drawing.Point(391, 358);
+            this.panel3.Location = new System.Drawing.Point(413, 361);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(404, 60);
             this.panel3.TabIndex = 2;
@@ -192,7 +197,7 @@
             this.plListTable.Controls.Add(this.cboMonAn);
             this.plListTable.Controls.Add(this.bntThemMon);
             this.plListTable.Controls.Add(this.cboDanhMucMonAn);
-            this.plListTable.Location = new System.Drawing.Point(391, 30);
+            this.plListTable.Location = new System.Drawing.Point(413, 33);
             this.plListTable.Name = "plListTable";
             this.plListTable.Size = new System.Drawing.Size(404, 60);
             this.plListTable.TabIndex = 3;
@@ -259,42 +264,78 @@
             // 
             // plBill
             // 
-            this.plBill.Controls.Add(this.livBill);
-            this.plBill.Location = new System.Drawing.Point(391, 96);
+            this.plBill.Controls.Add(this.flowLayoutPanel1);
+            this.plBill.Controls.Add(this.lsvBill);
+            this.plBill.Location = new System.Drawing.Point(413, 99);
             this.plBill.Name = "plBill";
             this.plBill.Size = new System.Drawing.Size(404, 259);
             this.plBill.TabIndex = 5;
             // 
-            // livBill
+            // lsvBill
             // 
-            this.livBill.HideSelection = false;
-            this.livBill.Location = new System.Drawing.Point(4, 3);
-            this.livBill.Name = "livBill";
-            this.livBill.Size = new System.Drawing.Size(397, 253);
-            this.livBill.TabIndex = 4;
-            this.livBill.UseCompatibleStateImageBehavior = false;
+            this.lsvBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lsvBill.GridLines = true;
+            this.lsvBill.HideSelection = false;
+            this.lsvBill.Location = new System.Drawing.Point(4, 4);
+            this.lsvBill.Name = "lsvBill";
+            this.lsvBill.Size = new System.Drawing.Size(397, 253);
+            this.lsvBill.TabIndex = 4;
+            this.lsvBill.UseCompatibleStateImageBehavior = false;
+            this.lsvBill.View = System.Windows.Forms.View.Details;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.flp_ban);
             this.panel1.Location = new System.Drawing.Point(12, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(373, 388);
+            this.panel1.Size = new System.Drawing.Size(395, 388);
             this.panel1.TabIndex = 6;
             // 
             // flp_ban
             // 
+            this.flp_ban.AutoScroll = true;
             this.flp_ban.Location = new System.Drawing.Point(3, 3);
             this.flp_ban.Name = "flp_ban";
-            this.flp_ban.Size = new System.Drawing.Size(367, 380);
+            this.flp_ban.Size = new System.Drawing.Size(389, 380);
             this.flp_ban.TabIndex = 0;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên Nước";
+            this.columnHeader1.Width = 160;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số Lượng";
+            this.columnHeader2.Width = 65;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(221, 136);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
+            this.flowLayoutPanel1.TabIndex = 5;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Giá";
+            this.columnHeader3.Width = 63;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành Tiền";
+            this.columnHeader4.Width = 214;
             // 
             // fPhanMemQuanLyQuanCaPhe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(807, 430);
+            this.ClientSize = new System.Drawing.Size(833, 430);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.plBill);
             this.Controls.Add(this.plListTable);
@@ -338,11 +379,16 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Panel plBill;
-        private System.Windows.Forms.ListView livBill;
+        private System.Windows.Forms.ListView lsvBill;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblNameFood;
         private System.Windows.Forms.FlowLayoutPanel flp_ban;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

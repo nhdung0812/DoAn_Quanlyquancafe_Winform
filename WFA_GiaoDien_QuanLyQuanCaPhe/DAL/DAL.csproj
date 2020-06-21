@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DAL_BAN.cs" />
+    <Compile Include="DAL_HOADON.cs" />
+    <Compile Include="DAL_MENU.cs" />
     <Compile Include="DAL_TAIKHOAN.cs" />
+    <Compile Include="DAL_THONGTINHOADON.cs" />
     <Compile Include="DataPovier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

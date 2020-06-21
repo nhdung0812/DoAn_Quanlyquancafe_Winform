@@ -12,7 +12,7 @@ namespace BEL
         private int _soban;
         private string _tenban;
         private string _trangthai;
-
+       
         public BEL_BAN(int soban, string tenban, string trangthai)
         {
             this._soban = soban;
@@ -26,6 +26,7 @@ namespace BEL
             this._trangthai = row["status"].ToString();
 
         }
+        
         public int Soban
         {
             get { return _soban; }
