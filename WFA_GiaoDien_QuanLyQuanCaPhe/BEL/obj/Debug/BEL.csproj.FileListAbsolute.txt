@@ -1,6 +1,0 @@
-E:\WFA_GiaoDien_QuanLyQuanCaPhe\BEL\bin\Debug\BEL.dll
-E:\WFA_GiaoDien_QuanLyQuanCaPhe\BEL\bin\Debug\BEL.pdb
-E:\WFA_GiaoDien_QuanLyQuanCaPhe\BEL\obj\Debug\BEL.csprojAssemblyReference.cache
-E:\WFA_GiaoDien_QuanLyQuanCaPhe\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
-E:\WFA_GiaoDien_QuanLyQuanCaPhe\BEL\obj\Debug\BEL.dll
-E:\WFA_GiaoDien_QuanLyQuanCaPhe\BEL\obj\Debug\BEL.pdb

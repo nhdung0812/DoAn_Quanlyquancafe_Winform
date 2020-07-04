@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55B26AF9-37FB-4598-A3D7-F2316C239E31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WFA_GiaoDien_QuanLyQuanCaPhe</RootNamespace>
+    <AssemblyName>WFA_GiaoDien_QuanLyQuanCaPhe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.30\lib\net461\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHoaDon.Designer.cs">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNguoiquanly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNguoiquanly.Designer.cs">
+      <DependentUpon>fNguoiquanly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhanMemQuanLyQuanCaPhe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhanMemQuanLyQuanCaPhe.Designer.cs">
+      <DependentUpon>fPhanMemQuanLyQuanCaPhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThongtincanhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThongtincanhan.Designer.cs">
+      <DependentUpon>fThongtincanhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyQuanCafeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyQuanCafeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyQuanCafeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyQuanCafeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyQuanCafeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyQuanCafeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UserControl_Ban.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Ban.Designer.cs">
+      <DependentUpon>UserControl_Ban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_DanhMuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_DanhMuc.Designer.cs">
+      <DependentUpon>UserControl_DanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_DoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_DoanhThu.Designer.cs">
+      <DependentUpon>UserControl_DoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_HoaDonNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_HoaDonNhap.Designer.cs">
+      <DependentUpon>UserControl_HoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_TaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_TaiKhoan.Designer.cs">
+      <DependentUpon>UserControl_TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_ThucUong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_ThucUong.Designer.cs">
+      <DependentUpon>UserControl_ThucUong.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fHoaDon.resx">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNguoiquanly.resx">
+      <DependentUpon>fNguoiquanly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhanMemQuanLyQuanCaPhe.resx">
+      <DependentUpon>fPhanMemQuanLyQuanCaPhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThongtincanhan.resx">
+      <DependentUpon>fThongtincanhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="UserControl_Ban.resx">
+      <DependentUpon>UserControl_Ban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_DanhMuc.resx">
+      <DependentUpon>UserControl_DanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_DoanhThu.resx">
+      <DependentUpon>UserControl_DoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_HoaDonNhap.resx">
+      <DependentUpon>UserControl_HoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_TaiKhoan.resx">
+      <DependentUpon>UserControl_TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_ThucUong.resx">
+      <DependentUpon>UserControl_ThucUong.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\add_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\add_1_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\add_1_icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\delete_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\update_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{c2e62720-4135-4a49-932a-553f56d5741d}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEL\BEL.csproj">
+      <Project>{d2857adf-145d-4117-9f1f-4bc070938feb}</Project>
+      <Name>BEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{7cadd837-0106-4011-9ee3-f018db8d6acf}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QuanLyQuanCafeDataSet.xsc">
+      <DependentUpon>QuanLyQuanCafeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyQuanCafeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyQuanCafeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyQuanCafeDataSet.xss">
+      <DependentUpon>QuanLyQuanCafeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyQuanCafeDataSet1.xsc">
+      <DependentUpon>QuanLyQuanCafeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyQuanCafeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyQuanCafeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyQuanCafeDataSet1.xss">
+      <DependentUpon>QuanLyQuanCafeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyQuanCafeDataSet2.xsc">
+      <DependentUpon>QuanLyQuanCafeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyQuanCafeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyQuanCafeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyQuanCafeDataSet2.xss">
+      <DependentUpon>QuanLyQuanCafeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\icons8-lock-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-2001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
